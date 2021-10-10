@@ -1,0 +1,99 @@
+body {
+	font-family: "Inter", system-ui;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.epoch-group {
+	position: absolute;
+	left: 50%;
+	top: calc(50% - 100px);
+	transform: translate(-50%, -50%);
+}
+
+.epoch-group span,
+.date-group span {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+#currentepoch {
+	margin: 0;
+}
+
+.date-group {
+	position: absolute;
+	left: 50%;
+	top: calc(50% + 100px);
+	transform: translate(-50%, -50%);
+}
+
+#date {
+	margin: 0;
+}
+
+#countdown {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 100px);
+	text-align: center;
+	padding: 50px;
+	font-size: 100px;
+	border-radius: 30px;
+	font-weight: 800;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 50s infinite linear;
+	animation: hue 50s infinite linear;
+	margin: 0;
+}
+
+@keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#countdown {
+		font-size: 60px;
+	}
+	.date-group {
+		top: calc(50% + 80px);
+	}
+	.epoch-group {
+		top: calc(50% - 80px);
+	}
+}
+@media only screen and (max-width: 550px) {
+	#countdown {
+		font-size: 40px;
+		padding: 20px;
+		width: calc(100% - 40px);
+	}
+}
+@media only screen and (max-width: 400px) {
+	#countdown {
+		font-size: 30px;
+	}
+	.date-group {
+		top: calc(50% + 60px);
+	}
+	.epoch-group {
+		top: calc(50% - 60px);
+	}
+}
+@media only screen and (max-width: 260px) {
+	#countdown {
+		font-size: 15px;
+	}
+}
