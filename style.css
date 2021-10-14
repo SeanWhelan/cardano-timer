@@ -5,6 +5,10 @@ body {
 	padding: 0;
 }
 
+.bold {
+	font-weight: 700;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -23,8 +27,8 @@ html[data-theme="dark"] .suggestion {
 	color: white;
 }
 
-html[data-theme="dark"] .epoch-group span,
-html[data-theme="dark"] .date-group span {
+html[data-theme="dark"] .epoch-group .title-s,
+html[data-theme="dark"] .date-group .title-s {
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -91,8 +95,8 @@ html[data-theme="dark"] #currentepoch {
 	transform: translate(-50%, -50%);
 }
 
-.epoch-group span,
-.date-group span {
+.epoch-group .title-s,
+.date-group .title-s {
 	color: rgba(0, 0, 0, 0.3);
 }
 

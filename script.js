@@ -43,9 +43,11 @@ let epochTimer = function () {
 		"m " +
 		duration.seconds() +
 		"s"
-	document.getElementById("date").innerHTML = next_epoch.format(
-		"ddd DD MMM YYYY hh:mm:ssa"
-	)
+	document.getElementById("date").innerHTML =
+		"<span class='bold'>" +
+		next_epoch.format("dddd, Do MMMM") +
+		"</span> at " +
+		next_epoch.format("hh:mm:ssa")
 }
 
 epochTimer()
