@@ -32,6 +32,17 @@ body {
 	margin: 0;
 }
 
+.suggestion {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.suggestion p,
+.suggestion h5 {
+	margin: 0;
+}
+
 #countdown {
 	position: absolute;
 	left: 50%;
