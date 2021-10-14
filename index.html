@@ -29,8 +29,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="language" content="English" />
 		<meta name="author" content="Seán Whelan" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
+		<div class="theme-switcher noselect">
+			<i class="fas fa-sun"></i>
+			&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" id="tooglenight" class="cbx hidden" />
+			<label for="tooglenight" class="switch"></label>
+			&nbsp;&nbsp;&nbsp;
+			<i class="fas fa-moon"></i>
+		</div>
 		<div class="epoch-group">
 			<span>current epoch</span>
 			<p id="currentepoch"></p>
@@ -46,6 +61,12 @@
 			<h5>got a suggestion or idea?</h5>
 			<p>hello@cardanotimer.com</p>
 		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 		<script src="script.js"></script>
 	</body>

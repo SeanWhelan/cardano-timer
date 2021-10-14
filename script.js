@@ -53,3 +53,36 @@ epochTimer()
 var x = setInterval(function () {
 	epochTimer()
 }, 1000)
+
+const changeThemeToDark = () => {
+	$("html").attr("data-theme", "dark") // set theme to dark
+	localStorage.setItem("data-theme", "dark") // save theme to local storage
+}
+
+const changeThemeToLight = () => {
+	$("html").attr("data-theme", "light") // set theme light
+	localStorage.setItem("data-theme", "light") // save theme to local storage
+}
+
+// Get the element based on ID
+const checkbox = $(".cbx")
+// Apply retrived them to the website
+checkbox.change(function () {
+	let theme = localStorage.getItem("data-theme") // Retrieve saved them from local storage
+	if (theme === "dark") {
+		changeThemeToLight()
+		$(".fas").css("color", "black")
+	} else {
+		changeThemeToDark()
+		$(".fas").css("color", "white")
+	}
+})
+
+let theme = localStorage.getItem("data-theme") // Retrieve saved them from local storage
+if (theme === "dark") {
+	changeThemeToDark()
+	$(".cbx").prop("checked", true)
+	$(".fas").css("color", "white")
+} else {
+	changeThemeToLight()
+}
