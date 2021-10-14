@@ -45,7 +45,7 @@ html[data-theme="dark"] #currentepoch {
 	display: block;
 	height: 20px;
 	width: 44px;
-	background: #303030;
+	background: #464646;
 	border-radius: 100px;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -78,7 +78,7 @@ html[data-theme="dark"] #currentepoch {
 	pointer-events: none;
 }
 .cbx:disabled ~ label:after {
-	background: #bcbdbc;
+	background: #8b8b8b;
 }
 .hidden {
 	display: none;
